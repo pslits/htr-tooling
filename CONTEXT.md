@@ -49,5 +49,5 @@ The text quality of a whole chain (in reading order, against ground truth) compa
 _Avoid_: end-to-end score, fallback test
 
 **Deviation**:
-A recorded difference from the Reference: either a fixed Loghi bug or a change that the Chain outcome shows is no worse.
+A deliberate, recorded difference from the Reference or from what a replaced minion promises (its flags, defaults and exit codes): either a fixed Loghi bug or a change that the Chain outcome shows is no worse. A bug in code htr-tooling doesn't replace is not a Deviation, only something to report upstream.
 _Avoid_: divergence, difference, known issue
