@@ -51,3 +51,17 @@ _Avoid_: end-to-end score, fallback test
 **Deviation**:
 A deliberate, recorded difference from the Reference or from what a replaced minion promises (its flags, defaults and exit codes): either a fixed Loghi bug or a change that the Chain outcome shows is no worse. A bug in code htr-tooling doesn't replace is not a Deviation, only something to report upstream.
 _Avoid_: divergence, difference, known issue
+
+### Models
+
+**Model**:
+A published Laypa or Loghi-HTR model as Loghi itself reads it: a Loghi-HTR model folder, or a Laypa config with its weights. Named by its path; htr-tooling never writes into it.
+_Avoid_: model folder (when the identity is meant), Loghi model, eigen model / generiek model (genealogie-transcriptie's terms for who made it)
+
+**Converted model**:
+An ONNX version of a Model, kept apart from it, together with the fingerprint of the Model's files it was made from and the evidence that it was verified.
+_Avoid_: ONNX model, exported model
+
+**Model store**:
+The place where htr-tooling keeps Converted models, found by the fingerprint of their Model.
+_Avoid_: model cache, registry
