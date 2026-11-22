@@ -34,6 +34,16 @@ _Avoid_: Glyph (PAGE element), TextEquiv
 The order in which the regions and lines of a page are meant to be read.
 _Avoid_: ReadingOrder (PAGE element), leesvolgorde
 
+**Line image**:
+The crop of one line from the page image, masked by its line polygon; what recognition reads.
+_Avoid_: snippet, line crop, uitsnede, regelbeeld
+
+### The chain
+
+**Step**:
+One stage of the chain that turns a page into a richer page, such as extracting baselines, cutting line images, merging text or recalculating the reading order; each replaces one minion.
+_Avoid_: minion (that is Loghi's program), stage, phase (that is a part of the plan)
+
 ### Checking against Loghi
 
 **Reference**:
@@ -65,3 +75,7 @@ _Avoid_: ONNX model, exported model
 **Model store**:
 The place where htr-tooling keeps Converted models, found by the fingerprint of their Model.
 _Avoid_: model cache, registry
+
+**Runtime**:
+The way a Model is run: Loghi itself in Docker, or its Converted model in ONNX Runtime on a chosen execution provider.
+_Avoid_: backend, engine
